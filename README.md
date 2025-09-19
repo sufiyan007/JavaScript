@@ -68,36 +68,48 @@
 <details>
 <summary><strong>🟦 Section 2: Basics – ⏳ In Progress</strong></summary>
 
+### Variables & Constants
 • Introducing Variables & Constants  
 • Declaring & Defining Variables  
 • Working with Variables & Operators  
 • Understanding the Starting Code  
-• Data Types: Numbers & Strings (Text)  
 • Using Constants  
+
+### Data Types
+• Data Types: Numbers & Strings (Text)  
 • More on Strings  
-• Introducing Functions  
-• Adding A Custom Function  
-• Code Styles, Conventions & Syntax  
-• Returning Values  
-• An Introduction to Global & Local Scope  
-• "Shadowed Variables"  
-• More about the "return" Statement  
-• Executing Functions "Indirectly"  
-• "Indirect" vs "Direct" Function Execution - Summary  
 • Converting Data Types  
 • Mixing Numbers & Strings  
+• More Core Data Types!  
+• undefined, null & NaN  
+• The "typeof" Operator  
+
+### Functions
+• Introducing Functions  
+• Adding A Custom Function  
+• Returning Values  
 • Splitting Code into Functions  
 • Connecting all Buttons to Functions  
+• Executing Functions "Indirectly"  
+• "Indirect" vs "Direct" Function Execution - Summary  
+
+### Scope & Variables
+• An Introduction to Global & Local Scope  
+• "Shadowed Variables"  
+
+### Code Style & Syntax
+• Code Styles, Conventions & Syntax  
 • Working with Code Comments  
 • More Operators!  
-• More Core Data Types!  
+
+### Arrays & Objects
 • Using Arrays  
 • Creating Objects  
 • Objects - Common Syntax Gotchas  
 • Accessing Object Data  
 • Adding a Re-Usable Function That Uses Objects  
-• undefined, null & NaN  
-• The "typeof" Operator  
+
+### Scripts
 • Importing Scripts Correctly with "defer" & "async"  
 
 </details>
@@ -107,6 +119,7 @@
 <details>
 <summary><strong>🟩 Section 3: Efficient Development & Debugging – 🔜 Pending</strong></summary>
 
+### IDE & Workflow
 • Efficient Development & Debugging - An Overview  
 • Configuring the IDE Look & Feel  
 • Using Shortcuts  
@@ -115,8 +128,12 @@
 • Tweaking Editor Settings  
 • Utilizing Different IDE Views  
 • Finding Help & Working with MDN  
-• The ECMAScript Standard  
 • How to "google" Correctly  
+
+### JavaScript Standards
+• The ECMAScript Standard  
+
+### Debugging
 • Debugging JavaScript - An Overview  
 • An Error Message! No Reason To Panic!  
 • Using console.log() to look "into the Code"  
