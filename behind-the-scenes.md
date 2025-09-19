@@ -1,4 +1,4 @@
-# 📘 JavaScript Deep Notes (Interview + Real-World) — Section 5: Behind the Scenes
+# 📘 Section 5: Behind the Scenes
 
 This section explains the inner workings of JavaScript: evolution, scope, hoisting, engine execution, parsing, memory, and browser APIs. All explained with examples, memory/engine flow, and interview-style insights.
 
