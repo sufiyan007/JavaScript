@@ -8,9 +8,9 @@
 
 | 📚 Section | 🧠 Title | 🧩 Topics Covered | 🏁 Status |
 |-----------|----------|------------------|-----------|
-| [Section 1](#-section-1-introduction) | Introduction | •  | ✅ Completed |
-| [Section 2](#-section-2-basics-variables-data-types-operators--functions) | Basics | •  | ⏳ In Progress |
-| [Section 3](#-section-3-efficient-development--debugging) | Efficient Development | •  | 🔜 Upcoming |
+| [Section 1](#-section-1-introduction) | Introduction | • What is JS?<br>• Execution Model<br>• Weak vs Dynamic Typing | ✅ Completed | 
+| [Section 2](#-section-2-basics-variables-data-types-operators--functions) | Basics | • Variables<br>• Data Types<br>• Operators<br>• Functions<br>• Objects<br>• Arrays | ⏳ In Progress | 
+| [Section 3](#-section-3-efficient-development--debugging) | Efficient Development & Debugging | • IDE Setup<br>• Debugging<br>• DevTools | 🔜 Pending |
 | [Section 4](#-section-4-working-with-control-structures) | Control Structures | •  | ⏳ In Progress |
 | [Section 5](#-section-5-behind-the-scenes) | Behind the Scenes | •  | 🔜 Upcoming |
 | [Section 6](#-section-6-more-on-functions) | More on Functions | •  | 🔜 Upcoming |
