@@ -11,7 +11,7 @@
 | [Section 1](#-section-1-introduction) | Introduction | • What is JS?<br>• Execution Model<br>• Weak vs Dynamic Typing | ✅ Completed | 
 | [Section 2](#-section-2-basics-variables-data-types-operators--functions) | Basics | • Variables<br>• Data Types<br>• Operators<br>• Functions<br>• Objects<br>• Arrays | ⏳ In Progress | 
 | [Section 3](#-section-3-efficient-development--debugging) | Efficient Development & Debugging | • IDE Setup<br>• Debugging<br>• DevTools | 🔜 Pending |
-| [Section 4](#-section-4-working-with-control-structures) | Control Structures | •  | ⏳ In Progress |
+| [Section 4](#-section-3-working-with-control-structures) | Control Structures | • Conditional Statements<br>• Boolean Logic<br>• Loops / Iteration<br>• Loop Control<br>• Error Handling | 🔜 Upcoming |
 | [Section 5](#-section-5-behind-the-scenes) | Behind the Scenes | •  | 🔜 Upcoming |
 | [Section 6](#-section-6-more-on-functions) | More on Functions | •  | 🔜 Upcoming |
 | [Section 7](#-section-7-working-with-the-dom) | DOM Basics | •  | 🔜 Upcoming |
@@ -124,3 +124,28 @@
 70. Testing Code Changes Directly in the Devtools  
 
 </details>
+
+---
+
+<details><summary><strong>🟩 Section 4: Control Structures – 🔜 Pending</strong></summary>
+
+### Conditional Statements
+- if, if-else, else-if  
+- switch  
+- Ternary Operator  
+- Boolean Logic: AND, OR, Truthy/Falsy, Coercion  
+
+### Loops / Iteration
+- for, for-of, for-in  
+- while, do-while  
+
+### Loop Control
+- break, continue, labeled statements  
+
+### Error Handling
+- try-catch  
+- Throwing Custom Errors  
+
+</details>
+
+---
