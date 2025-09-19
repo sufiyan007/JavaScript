@@ -182,7 +182,6 @@
 
 ### Code Practices
 • Strict Mode & Writing Good Code  
-• Quiz: "JavaScript Specialties"  
 
 ### Parsing & Compilation
 • How Code is Parsed & Compiled  
