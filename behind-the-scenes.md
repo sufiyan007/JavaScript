@@ -288,12 +288,12 @@ console.log(person.name); // Alice
 
 Explanation:
 The person object is stored in heap memory. As long as person variable exists, JS cannot garbage collect the object, even if we no longer need it.
+```
 
 ### Example: Event Listeners
 ```html
 <button id="addListenerBtn">Add Listener</button>
 <button id="clickMeBtn">Click Me</button>
-```
 ```js
 function printMessage() {
   console.log("Test");
