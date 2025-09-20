@@ -196,7 +196,7 @@ console.log(document.title); // Browser API
 
 ---
 
-## 7. Memory & Garbage Collection
+## 7. Primitive vs Reference
 
 ### 🔹 Primitive vs Reference Values
 
@@ -210,7 +210,7 @@ let obj = {x:5}; // reference
 ```
 * **Tip:** Know how primitives vs references behave during assignment & function calls.
 
-## 7. Memory Management & Garbage Collection 
+## 8. Memory Management & Garbage Collection 
 
 ## 1. Memory Allocation
 
