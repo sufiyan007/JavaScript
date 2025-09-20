@@ -210,12 +210,108 @@ let obj = {x:5}; // reference
 ```
 * **Tip:** Know how primitives vs references behave during assignment & function calls.
 
-### 🔹 Garbage Collection & Memory Management
+## 7. Memory Management & Garbage Collection 
 
-* JS engine automatically frees memory of unreachable objects.
-* Algorithms: mark-and-sweep, generational GC.
-* Avoid memory leaks: e.g., forgotten event listeners, closures holding large objects.
-* **Tip:** Understanding GC + stack/heap helps optimize memory in large apps.
+## 1. Memory Allocation
+
+When JavaScript runs, it stores variables, objects, arrays, and functions in memory.
+
+**Memory Areas:**
+- **Stack:** short-term memory for primitives and execution contexts (function calls).
+- **Heap:** long-term memory for objects, arrays, and functions.
+
+The operating system allocates memory to your browser (Chrome, Firefox, etc.), and the browser has internal memory management to prevent your webpage from using too much memory.
+
+---
+
+## 2. Garbage Collection (GC)
+
+The garbage collector is a built-in mechanism in every JS engine (e.g., V8 in Chrome) that automatically frees memory.
+
+- Runs periodically.
+- Detects objects in the heap that have no references pointing to them.
+- Reference = a variable or place in code storing the address of the object in heap.
+
+### Example:
+```js
+let person = { name: "Max" }; // stored in heap, reference in stack
+person = null; // object becomes unreachable, GC will clean it
+```
+
+**Key Points:**
+- Cannot manually trigger GC.
+- GC runs smartly on its own schedule.
+- Modern JS engines detect unused arrays, objects, and functions automatically.
+
+---
+
+## 3. Memory Management Tips
+
+- Avoid retaining references to objects no longer needed.
+- Watch out for:
+  - Closures holding large objects.
+  - Event listeners not removed.
+  - Global variables persisting unnecessarily.
+
+### Example Scenario:
+```js
+function demo() {
+  let obj = { data: [1,2,3] }; // heap allocation
+  console.log(obj.data);
+  // obj goes out of scope after function ends → GC will clean it
+}
+demo();
+```
+
+Object `obj` is removed after the function finishes if no other references exist.
+
+---
+
+## 4. Memory Leaks & Event Listeners
+
+### What is a Memory Leak?
+- Memory is occupied but never used.
+- Happens when references to unused objects remain.
+- Garbage collector cannot free these objects.
+
+### Example: Event Listeners
+```html
+<button id="addListenerBtn">Add Listener</button>
+<button id="clickMeBtn">Click Me</button>
+```
+```js
+function printMessage() {
+  console.log("Test");
+}
+document.getElementById("addListenerBtn").addEventListener("click", function() {
+  document.getElementById("clickMeBtn").addEventListener("click", printMessage);
+});
+```
+- Clicking "Add Listener" attaches `printMessage` to "Click Me".
+- Clicking "Click Me" prints "Test".
+- Re-clicking "Add Listener" does NOT add duplicates → JS reuses the same function reference.
+
+### Anonymous Functions Can Introduce Leaks
+```js
+document.getElementById("addListenerBtn").addEventListener("click", function() {
+  document.getElementById("clickMeBtn").addEventListener("click", function() {
+    console.log("Test");
+  });
+});
+```
+- Every click on "Add Listener" creates a new function object.
+- Multiple outputs printed for each click on "Click Me".
+- GC cannot clean these while referenced by the button.
+
+**Key Points:**
+- Named functions → safer, reused across listeners.
+- Anonymous functions inside other functions → new objects each time → potential memory leaks.
+- Garbage Collector is smart but cannot fix bad references.
+- Too many functions in memory → slow performance.
+
+---
+
+**Tip for SDEs:** Always track references, prefer named functions for event listeners, and understand GC to avoid memory leaks in complex applications.
 
 ---
 
