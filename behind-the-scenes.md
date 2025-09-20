@@ -267,12 +267,27 @@ Object `obj` is removed after the function finishes if no other references exist
 
 ---
 
-## 4. Memory Leaks & Event Listeners
+## 4. # Memory Leaks & Event Listeners
 
 ### What is a Memory Leak?
 - Memory is occupied but never used.
 - Happens when references to unused objects remain.
-- Garbage collector cannot free these objects.
+
+### Simple Example:
+
+```js
+// Create an object
+let person = { name: "Alice" };
+
+// Use it
+console.log(person.name); // Alice
+
+// Forget to remove reference
+// person is still pointing to the object
+// Even if we don't need it, memory is occupied
+
+Explanation:
+The person object is stored in heap memory. As long as person variable exists, JS cannot garbage collect the object, even if we no longer need it.
 
 ### Example: Event Listeners
 ```html
