@@ -302,6 +302,7 @@ document.getElementById("addListenerBtn").addEventListener("click", function() {
   document.getElementById("clickMeBtn").addEventListener("click", printMessage);
 });
 ```
+```
 - Clicking "Add Listener" attaches `printMessage` to "Click Me".
 - Clicking "Click Me" prints "Test".
 - Re-clicking "Add Listener" does NOT add duplicates → JS reuses the same function reference.
