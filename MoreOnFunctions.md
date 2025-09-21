@@ -135,15 +135,20 @@ Ways to communicate with the user:
 ---
 
 ## 10. Default Arguments
-Set default values if no argument is passed.
+Default arguments let you give a function parameter a default value.
+If the caller doesn’t pass a value (or passes undefined), the default is used.
+This helps avoid undefined values and makes functions safer.
 
 ```js
 function greet(name = "Guest") {
   console.log("Hello " + name);
 }
 
-greet(); // Hello Guest
+greet();           // Hello Guest
+greet("Sufiyan");  // Hello Sufiyan
 ```
+name = "Guest" → sets a default value "Guest".
+If we call greet() without arguments, name automatically becomes "Guest".
 
 ---
 
