@@ -1,6 +1,187 @@
-# 📘 JavaScript Functions Deep Notes
+# 📘 JavaScript Functions (Deep Notes for SDE Interviews)
 
-This document explains **functions** in JavaScript step by step with simple words, examples, and internal details.
+Functions are one of the **core building blocks** in JavaScript.  
+They allow us to group logic, reuse code, and handle asynchronous tasks.  
+
+Let’s learn topic by topic 👇
+
+---
+
+## 1. Parameters vs Arguments
+- **Parameters** → placeholders written in the function definition.  
+- **Arguments** → actual values you pass when calling the function.  
+
+```js
+function greet(name) { // 'name' = parameter
+  console.log("Hello " + name);
+}
+
+greet("Alice"); // "Alice" = argument
+```
+
+👉 Think of parameters as *empty containers* and arguments as the *water you pour inside*.
+
+---
+
+## 2. Functions vs Methods
+- **Function:** Independent block of code.
+- **Method:** A function that lives inside an object.
+
+```js
+function add(a, b) {
+  return a + b; // function
+}
+
+const calculator = {
+  multiply(x, y) {
+    return x * y; // method
+  }
+};
+```
+
+👉 Methods always belong to an object.
+
+---
+
+## 3. Functions are Objects!
+In JavaScript, **functions themselves are objects**.  
+This means:
+- You can store them in variables.
+- Pass them as arguments.
+- Attach properties to them.
+
+```js
+function sayHi() { console.log("Hi!"); }
+sayHi.language = "English";
+
+console.log(sayHi.language); // English
+```
+
+---
+
+## 4. Function Expressions
+You can store a function inside a variable.
+
+```js
+const greet = function(name) {
+  return "Hello " + name;
+};
+console.log(greet("Bob"));
+```
+
+👉 Expression = “assigning” a function.
+
+---
+
+## 5. Function Expressions vs Declarations
+- **Declaration:** Hoisted (available before execution).  
+- **Expression:** Not hoisted.
+
+```js
+// Declaration
+function sum(a, b) {
+  return a + b;
+}
+
+// Expression
+const sum2 = function(a, b) {
+  return a + b;
+};
+```
+
+---
+
+## 6. Anonymous Functions
+Functions without names.  
+Used where you don’t need to reuse them.
+
+```js
+setTimeout(function() {
+  console.log("Runs once after 1 sec");
+}, 1000);
+```
+
+---
+
+## 7. Arrow Functions
+A **shorter syntax** for writing functions.
+
+```js
+const greet = (name) => "Hello " + name;
+```
+
+---
+
+## 8. Arrow Function Syntax Variations
+```js
+const square = x => x * x;      // single param
+const add = (a, b) => a + b;    // multiple params
+const log = () => console.log("Hi!"); // no params
+```
+
+---
+
+## 9. Outputting Messages
+Ways to communicate with the user:
+- `console.log("Debug")`
+- `alert("Hello!")`
+- `prompt("Enter your name")`
+
+---
+
+## 10. Default Arguments
+Set default values if no argument is passed.
+
+```js
+function greet(name = "Guest") {
+  console.log("Hello " + name);
+}
+
+greet(); // Hello Guest
+```
+
+---
+
+## 11. Rest Parameters (`...`)
+Collects multiple arguments into an array.
+
+```js
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b, 0);
+}
+console.log(sum(1, 2, 3, 4)); // 10
+```
+
+---
+
+## 12. Functions Inside Functions
+Yes, functions can live inside other functions.
+
+```js
+function outer() {
+  function inner() {
+    console.log("I am inner");
+  }
+  inner();
+}
+outer();
+```
+
+---
+
+## 13. Callback Functions
+A **function passed as an argument** to another function.
+
+```js
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+
+greet("Alice", () => console.log("Welcome!"));
+```
+
+👉 Callbacks are heavily used in async code (like APIs, setTimeout, events).
 
 ---
 
