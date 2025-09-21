@@ -118,7 +118,11 @@ const square = x => x * x;      // single param
 const add = (a, b) => a + b;    // multiple params
 const log = () => console.log("Hi!"); // no params
 ```
+4️⃣ Rules for implicit return
 
+Works only with a single expression.
+
+Curly braces {} mean a function block → then you must use return.
 ---
 
 ## 9. Outputting Messages
