@@ -12,8 +12,8 @@
 | [Section 2](#-section-2-basics-variables-data-types-operators--functions) | Basics | • Variables<br>• Data Types<br>• Operators<br>• Functions<br>• Objects<br>• Arrays | ⏳ In Progress | 
 | [Section 3](#-section-3-efficient-development--debugging) | Efficient Development & Debugging | • IDE Setup<br>• Debugging<br>• DevTools | 🔜 Pending |
 | [Section 4](#-section-3-working-with-control-structures) | Control Structures | • Conditional Statements<br>• Boolean Logic<br>• Loops / Iteration<br>• Loop Control<br>• Error Handling | 🔜 Upcoming |
-| [Section 5](https://github.com/sufiyan007/JavaScript/blob/main/behind-the-scenes.md) | Behind the Scenes | • JavaScript Evolution<br>• Scope & Hoisting<br>• Strict Mode & Good Practices<br>• Parsing & Compilation<br>• JS Engine & Execution<br>• Language vs Browser APIs<br>• Memory & Garbage Collection | 🔜 Pending |
-| [Section 6](https://github.com/sufiyan007/JavaScript/blob/main/MoreOnFunctions.md) | More on Functions | •  | 🔜 Upcoming |
+| [Section 5](https://github.com/sufiyan007/JavaScript/blob/main/behind-the-scenes.md) | Behind the Scenes | • JavaScript Evolution <br>• Scope & Hoisting <br>• Strict Mode & Good Practices <br>• Parsing & Compilation <br>• JS Engine & Execution <br>• Language vs Browser APIs <br>• Memory & Garbage Collection | 🔜 Pending |
+| [Section 6](https://github.com/sufiyan007/JavaScript/blob/main/MoreOnFunctions.md) | More on Functions | • Parameters vs Arguments <br>• Functions vs Methods <br>• Functions are Objects <br>• Function Expressions <br>• Function Expressions vs Declarations <br>• Anonymous Functions <br>• Arrow Functions (Syntax Variants) <br>• Outputting Messages <br>• Default Arguments <br>• Rest Parameters <br>• Nested Functions <br>• Callback Functions <br>• bind() <br>• call() & apply() | 🔜 Upcoming |
 | [Section 7](#-section-7-working-with-the-dom) | DOM Basics | •  | 🔜 Upcoming |
 | [Section 8](#-section-8-more-on-arrays--iterables) | Arrays & Iterables | •  | 🔜 Upcoming |
 | [Section 9](#-section-9-more-on-objects) | Objects | •  | 🔜 Upcoming |
@@ -193,6 +193,30 @@
 ### Memory Management
 • Primitive vs Reference Values  
 • Garbage Collection & Memory Management  
+
+</details>
+
+---
+
+<details>
+<summary><strong>📘 Phase 4: Functions Deep Dive – 🚧 In Progress</strong></summary>
+
+- [ ] Parameters vs Arguments  
+- [ ] Functions vs Methods  
+- [ ] Functions are Objects!  
+- [ ] Function Expressions: Storing Functions in Variables  
+- [ ] Function Expressions vs Function Declarations  
+- [ ] Anonymous Functions  
+- [ ] Introducing Arrow Functions  
+- [ ] Different Arrow Function Syntaxes  
+- [ ] Outputting Messages to the User  
+- [ ] Default Arguments in Functions  
+- [ ] Introducing Rest Parameters ("Rest Operator")  
+- [ ] Creating Functions Inside of Functions  
+- [ ] Understanding Callback Functions  
+- [ ] Working with `bind()`  
+- [ ] Adding `bind()` to the Calculator Project  
+- [ ] `call()` and `apply()`  
 
 </details>
 
