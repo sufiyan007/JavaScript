@@ -94,6 +94,7 @@ const sum2 = function(a, b) {
 ## 6. Anonymous Functions
 Functions without names.  
 Used where you don’t need to reuse them.
+This helps to avoid the memory leak
 
 ```js
 setTimeout(function() {
@@ -121,8 +122,8 @@ const log = () => console.log("Hi!"); // no params
 4️⃣ Rules for implicit return
 
 Works only with a single expression.
-
 Curly braces {} mean a function block → then you must use return.
+
 ---
 
 ## 9. Outputting Messages
