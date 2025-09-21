@@ -189,19 +189,85 @@ outer();
 
 ---
 
-## 13. Callback Functions
-A **function passed as an argument** to another function.
+## 12. Callback Functions
 
-```js
+* **Definition:** A callback function is a function passed as an argument to another function, which is then executed inside that function.
+* **Purpose:** Provides flexibility and allows asynchronous code handling.
+
+### Basic Example
+
+```javascript
 function greet(name, callback) {
   console.log("Hello " + name);
-  callback();
+  callback(); // executes the passed function
 }
 
 greet("Alice", () => console.log("Welcome!"));
 ```
 
-👉 Callbacks are heavily used in async code (like APIs, setTimeout, events).
+**Output:**
+
+```
+Hello Alice
+Welcome!
+```
+
+### Named Callback Example
+
+```javascript
+function sayWelcome() {
+  console.log("Welcome!");
+}
+
+greet("Bob", sayWelcome);
+```
+
+**Output:**
+
+```
+Hello Bob
+Welcome!
+```
+
+### Callbacks in Asynchronous Code
+
+* **Timers:**
+
+```javascript
+setTimeout(() => {
+  console.log("Executed after 2 seconds");
+}, 2000);
+```
+
+* **Event listeners:**
+
+```javascript
+document.querySelector("button").addEventListener("click", () => {
+  console.log("Button clicked!");
+});
+```
+
+* **APIs / fetch requests:**
+
+```javascript
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data)); // functions inside then() are callbacks
+```
+
+> **Note:** We are not executing the function directly; the browser or runtime executes it when an event occurs or something happens.
+
+### Benefits of Callbacks
+
+1. **Code Reusability:** Different functions can be passed as callbacks.
+2. **Flexibility:** Determines what happens after an operation.
+3. **Asynchronous Handling:** Handles timers, events, or network requests.
+
+### Key Points
+
+* Can be **anonymous or named**.
+* Executed automatically when the event occurs or when called inside the main function.
+* Often replaced by **Promises or async/await** in modern JavaScript for readability.
 
 ---
 
