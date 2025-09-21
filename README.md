@@ -221,3 +221,52 @@
 </details>
 
 ---
+
+---
+
+<details>
+<summary><strong>📘 Section 7: DOM Basics – 🚧 In Progress</strong></summary>
+
+### Introduction to DOM
+• What is DOM?  
+• DOM vs HTML  
+• DOM Tree Structure (Nodes, Elements, Attributes, Text)  
+
+### Selecting Elements
+• `document.getElementById()`  
+• `document.querySelector()`  
+• `document.querySelectorAll()`  
+• Difference between HTMLCollection & NodeList  
+
+### Manipulating Elements
+• Changing text: `innerText`, `textContent`  
+• Changing HTML: `innerHTML`  
+• Attributes: `getAttribute()`, `setAttribute()`  
+• Styles: `element.style`  
+• Classes: `classList.add()`, `classList.remove()`, `classList.toggle()`  
+
+### Creating & Removing
+• `document.createElement()`  
+• `parent.append()`, `parent.prepend()`  
+• `parent.appendChild()`  
+• `element.remove()`  
+
+### Traversing the DOM
+• `element.parentElement`  
+• `element.children`  
+• `element.firstElementChild`, `element.lastElementChild`  
+• `element.nextElementSibling`, `element.previousElementSibling`  
+
+### DOM Events (Basics)
+• Adding event listeners: `addEventListener()`  
+• Old way: `onclick`  
+• Event object: `event.target`, `event.type`  
+• Removing listeners: `removeEventListener()`  
+
+### Event Flow
+• Capturing vs Bubbling  
+• `event.stopPropagation()`  
+• Event Delegation  
+
+</details>
+
