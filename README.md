@@ -14,7 +14,7 @@
 | [Section 4](#-section-3-working-with-control-structures) | Control Structures | • Conditional Statements<br>• Boolean Logic<br>• Loops / Iteration<br>• Loop Control<br>• Error Handling | 🔜 Upcoming |
 | [Section 5](https://github.com/sufiyan007/JavaScript/blob/main/behind-the-scenes.md) | Behind the Scenes | • JavaScript Evolution <br>• Scope & Hoisting <br>• Strict Mode & Good Practices <br>• Parsing & Compilation <br>• JS Engine & Execution <br>• Language vs Browser APIs <br>• Memory & Garbage Collection | 🔜 Pending |
 | [Section 6](https://github.com/sufiyan007/JavaScript/blob/main/MoreOnFunctions.md) | More on Functions | • Parameters vs Arguments <br>• Functions vs Methods <br>• Functions are Objects <br>• Function Expressions <br>• Function Expressions vs Declarations <br>• Anonymous Functions <br>• Arrow Functions (Syntax Variants) <br>• Outputting Messages <br>• Default Arguments <br>• Rest Parameters <br>• Nested Functions <br>• Callback Functions <br>• bind() <br>• call() & apply() | 🔜 Upcoming |
-| [Section 7](#-section-7-working-with-the-dom) | DOM Basics | •  | 🔜 Upcoming |
+| [Section 7](http://github.com/sufiyan007/JavaScript/blob/main/DOM.md) | DOM Basics | •  | 🔜 Upcoming |
 | [Section 8](#-section-8-more-on-arrays--iterables) | Arrays & Iterables | •  | 🔜 Upcoming |
 | [Section 9](#-section-9-more-on-objects) | Objects | •  | 🔜 Upcoming |
 | [Section 10](#-section-10-classes--oop) | Classes & OOP | •  | 🔜 Upcoming |
