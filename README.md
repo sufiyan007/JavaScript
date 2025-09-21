@@ -13,7 +13,7 @@
 | [Section 3](#-section-3-efficient-development--debugging) | Efficient Development & Debugging | • IDE Setup<br>• Debugging<br>• DevTools | 🔜 Pending |
 | [Section 4](#-section-3-working-with-control-structures) | Control Structures | • Conditional Statements<br>• Boolean Logic<br>• Loops / Iteration<br>• Loop Control<br>• Error Handling | 🔜 Upcoming |
 | [Section 5](https://github.com/sufiyan007/JavaScript/blob/main/behind-the-scenes.md) | Behind the Scenes | • JavaScript Evolution<br>• Scope & Hoisting<br>• Strict Mode & Good Practices<br>• Parsing & Compilation<br>• JS Engine & Execution<br>• Language vs Browser APIs<br>• Memory & Garbage Collection | 🔜 Pending |
-| [Section 6](#-section-6-more-on-functions) | More on Functions | •  | 🔜 Upcoming |
+| [Section 6](https://github.com/sufiyan007/JavaScript/blob/main/MoreOnFunctions.md) | More on Functions | •  | 🔜 Upcoming |
 | [Section 7](#-section-7-working-with-the-dom) | DOM Basics | •  | 🔜 Upcoming |
 | [Section 8](#-section-8-more-on-arrays--iterables) | Arrays & Iterables | •  | 🔜 Upcoming |
 | [Section 9](#-section-9-more-on-objects) | Objects | •  | 🔜 Upcoming |
