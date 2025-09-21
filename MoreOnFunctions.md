@@ -153,14 +153,24 @@ If we call greet() without arguments, name automatically becomes "Guest".
 ---
 
 ## 11. Rest Parameters (`...`)
-Collects multiple arguments into an array.
+Rest parameters allow a function to accept any number of arguments and collect them into an array.
+Syntax: ...name
+Only one rest parameter is allowed per function, and it must be the last parameter.
 
 ```js
 function sum(...nums) {
+  console.log(nums); // [1, 2, 3, 4]
   return nums.reduce((a, b) => a + b, 0);
 }
+
 console.log(sum(1, 2, 3, 4)); // 10
 ```
+✅ Explanation:
+...nums collects all arguments into an internal array called nums.
+You can now use array methods like for...of, reduce, map, etc.
+Rest parameter must be last, because it will collect all remaining arguments.
+Older JavaScript had arguments object, which is array-like but not a real array.
+...rest is a real array, so you can use all array methods directly.
 
 ---
 
