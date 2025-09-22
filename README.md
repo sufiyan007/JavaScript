@@ -222,51 +222,42 @@
 
 ---
 
----
-
 <details>
-<summary><strong>📘 Section 7: DOM Basics – 🚧 In Progress</strong></summary>
+<summary><strong>📘 Phase 7: The DOM (Document Object Model) – 🚧 Upcoming</strong></summary>
 
-### Introduction to DOM
-• What is DOM?  
-• DOM vs HTML  
-• DOM Tree Structure (Nodes, Elements, Attributes, Text)  
-
-### Selecting Elements
-• `document.getElementById()`  
-• `document.querySelector()`  
-• `document.querySelectorAll()`  
-• Difference between HTMLCollection & NodeList  
-
-### Manipulating Elements
-• Changing text: `innerText`, `textContent`  
-• Changing HTML: `innerHTML`  
-• Attributes: `getAttribute()`, `setAttribute()`  
-• Styles: `element.style`  
-• Classes: `classList.add()`, `classList.remove()`, `classList.toggle()`  
-
-### Creating & Removing
-• `document.createElement()`  
-• `parent.append()`, `parent.prepend()`  
-• `parent.appendChild()`  
-• `element.remove()`  
-
-### Traversing the DOM
-• `element.parentElement`  
-• `element.children`  
-• `element.firstElementChild`, `element.lastElementChild`  
-• `element.nextElementSibling`, `element.previousElementSibling`  
-
-### DOM Events (Basics)
-• Adding event listeners: `addEventListener()`  
-• Old way: `onclick`  
-• Event object: `event.target`, `event.type`  
-• Removing listeners: `removeEventListener()`  
-
-### Event Flow
-• Capturing vs Bubbling  
-• `event.stopPropagation()`  
-• Event Delegation  
+- [ ] Module Introduction  
+- [ ] What’s the "DOM"?  
+- [ ] Document and Window Object  
+- [ ] Understanding the DOM and how it's created  
+- [ ] Nodes & Elements - Querying the DOM Overview  
+- [ ] Selecting Elements in the DOM  
+- [ ] Summary: Node Query Methods  
+- [ ] Exploring and Changing DOM Properties  
+- [ ] Attributes vs Properties  
+- [ ] Selecting Multiple Elements & Summary  
+- [ ] Traversing the DOM - Overview  
+- [ ] Traversing Child Nodes  
+- [ ] Using `parentNode` & `parentElement`  
+- [ ] Selecting Sibling Elements  
+- [ ] DOM Traversal vs Query Methods  
+- [ ] Styling DOM Elements  
+- [ ] Creating Elements with JS - Overview  
+- [ ] Adding Elements via HTML in Code  
+- [ ] Adding Elements via `createElement()`  
+- [ ] Inserting DOM Elements  
+- [ ] Cloning DOM Nodes  
+- [ ] Live Node Lists vs Static Node Lists  
+- [ ] Removing Elements  
+- [ ] Insertion & Removal Method Summary  
+- [ ] Summary: Insert, Replace, Remove  
+- [ ] Selecting the Modal and "Add" Button  
+- [ ] Opening a Modal by Changing CSS Classes  
+- [ ] Controlling the Backdrop  
+- [ ] Fetching and Validating User Input  
+- [ ] Creating a Movie in JavaScript & Clearing the Input  
+- [ ] Rendering Movie Items on the Screen  
+- [ ] Deleting Movie Elements  
+- [ ] Showing & Hiding the "Are you sure?" Dialog  
+- [ ] Starting with the Confirmation Logic  
 
 </details>
-
