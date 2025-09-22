@@ -199,7 +199,7 @@
 ---
 
 <details>
-<summary><strong>📘 Phase 4: Functions Deep Dive – 🚧 In Progress</strong></summary>
+<summary><strong>📘 Phase 6: Functions Deep Dive – 🚧 In Progress</strong></summary>
 
 - [ ] Parameters vs Arguments  
 - [ ] Functions vs Methods  
