@@ -58,6 +58,8 @@ Document
 
 ---
 
+//Understand the concepts--
+
 # 🌳 DOM: Nodes, Elements, Attributes Explained
 
 ## 1. What is the DOM?
@@ -294,6 +296,8 @@ fetch("https://api.com");
 > “JavaScript itself is just a language. The engine only understands things like numbers, functions, and objects. When you manipulate the DOM or call fetch, that’s not JavaScript itself — that’s the browser exposing extra APIs. So JS does the thinking, but the browser does the acting.”
 
 ---
+
+
 
 ## 3. Window vs Document
 - `window` = global object → represents the whole browser tab (localStorage, history, timers, etc.).  
