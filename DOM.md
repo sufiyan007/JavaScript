@@ -58,6 +58,243 @@ Document
 
 ---
 
+# 🌳 DOM: Nodes, Elements, Attributes Explained
+
+## 1. What is the DOM?
+
+**DOM = Document Object Model**
+
+It’s the in-memory tree structure the browser builds after parsing HTML.
+
+Every HTML piece (tags, text, attributes, comments) becomes a **Node** in this tree.
+
+Think of HTML like a family tree:
+- The root parent is `<html>`.
+- Inside, you have `<head>` and `<body>`.
+- Inside those, you have children like `<title>`, `<h1>`, `<p>`, etc.
+
+## 2. What is a Node?
+
+👉 A **Node** is the basic unit in the DOM tree.
+Everything in HTML becomes some kind of Node.
+
+**Types of nodes:**
+- Document Node → the entire page (`document`)
+- Element Node → actual HTML tags (`<div>`, `<p>`, `<h1>`)
+- Text Node → the text inside elements (`Hello World`)
+- Attribute Node → attributes like `id="title"` or `class="header"`
+- Comment Node → `<!-- comments -->`
+
+## 3. What is an Element?
+
+👉 An **Element Node** is a tag in HTML.
+
+**Examples:**
+```html
+<div id="box">Hello</div>
+<p>Paragraph</p>
+```
+- `<div>` = element node
+- `<p>` = element node
+
+⚡ **Shortcut:** If it’s a tag, it’s an element node.
+
+## 4. What is a Text Node?
+
+👉 The actual text inside tags is wrapped in a **Text Node**.
+
+**Example:**
+```html
+<p>Hello World</p>
+```
+**DOM structure:**
+- `<p>` = element node
+- `"Hello World"` = text node (child of `<p>`)
+
+⚡ Text isn’t directly inside `<p>`, it’s in a text node child.
+
+## 5. What is an Attribute?
+
+👉 **Attributes** = extra info about elements, stored as attribute nodes in DOM.
+
+**Example:**
+```html
+<input type="text" id="username" placeholder="Enter name">
+```
+- `type="text"` → attribute
+- `id="username"` → attribute
+- `placeholder="Enter name"` → attribute
+
+⚡ Attributes modify behavior/appearance, but they are not children of the element. They are part of the element node’s properties.
+
+## 6. DOM Example Visualization
+
+**HTML:**
+```html
+<div id="box" class="container">
+  Hello <span>World</span>
+</div>
+```
+
+**DOM Tree:**
+```
+Document
+ └── html
+     └── body
+         └── div (element node, id="box", class="container")
+              ├── "Hello " (text node)
+              └── span (element node)
+                   └── "World" (text node)
+```
+
+**Breakdown:**
+- `div` = element node
+- `"Hello "` = text node
+- `span` = element node
+- `"World"` = text node
+- `id="box"` and `class="container"` = attributes of `<div>`
+
+## 7. How to Recognize Node vs Element vs Attribute?
+
+**Simple rules:**
+- Element = Any HTML tag (`<div>`, `<p>`, `<span>`)
+- Text Node = The content inside tags (`"Hello"`)
+- Attribute = Extra info inside opening tag (`id`, `class`, `src`)
+- Node = General term → covers all (element, text, attribute, comment, document)
+
+**Summary:**
+- Node = Big umbrella ☂️
+- Element = One type of node (tags)
+- Attribute = Belongs to element node
+- Text Node = Inside element node
+
+## 8. Why so many distinctions?
+
+In JS:
+- Sometimes you want elements → `document.querySelector('div')`
+- Sometimes you want text → `element.textContent`
+- Sometimes you want attributes → `element.getAttribute('id')`
+
+Knowing the difference helps you grab the right piece of the DOM.
+
+## 9. Inside Browser (Internal Working)
+
+Browser parses HTML → builds nodes → links them as parent/child → creates DOM tree.
+
+Each node is an object in memory with properties & methods.
+
+**Example:**
+```javascript
+const el = document.querySelector("div");
+console.log(el.nodeType); // 1 (Element Node)
+console.log(el.nodeName); // "DIV"
+console.log(el.textContent); // prints text inside
+```
+
+**Node Types:**
+- 1 = Element
+- 3 = Text
+- 8 = Comment
+- 9 = Document
+
+✅ **Final Takeaway:**
+- Everything in HTML becomes a Node.
+- Tags are Elements.
+- Text inside tags are Text Nodes.
+- Extra info inside tags are Attributes.
+- DOM = a tree of these nodes, which JS can manipulate.
+
+**Node vs Element:**
+> “An element is a tag like `<div>`, but a node is a broader concept – it could be an element, text, attribute, or even the document itself.”
+
+---
+
+# 🖥️ Browser vs. JavaScript — Who Does What?
+
+## 1. What is the Browser?
+
+A browser (Chrome, Firefox, Safari, Edge) is a software application that:
+- Parses HTML, CSS, and JavaScript
+- Renders the page (paints pixels on your screen)
+- Provides extra APIs (DOM, BOM, Fetch, localStorage, etc.)
+
+Think of the browser as the playground where HTML, CSS, and JavaScript interact.
+
+## 2. What is JavaScript?
+
+JavaScript itself is just a programming language. It can’t do anything alone. It needs a runtime (engine + environment).
+
+**Example engines:**
+- Chrome → V8 Engine
+- Firefox → SpiderMonkey
+- Safari → JavaScriptCore
+
+⚡ Engine’s job = parse → compile → execute JavaScript code.
+
+## 3. How They Work Together
+
+**Step 1: Browser loads HTML**
+- Browser parses HTML top-to-bottom.
+- When it sees a `<script>`, it pauses parsing → sends JS code to engine.
+
+**Step 2: Engine runs JavaScript**
+- Engine executes JS line by line.
+- Engine knows JS basics (numbers, loops, functions).
+- Browser provides APIs for JS to interact with page:
+  ```javascript
+document.querySelector("h1");
+localStorage.setItem("key", "value");
+fetch("https://api.com");
+```
+- These are **Browser APIs**, not part of JS language itself.
+
+## 4. Who Provides What?
+
+| Feature | Who Provides It? | Example |
+|---------|-----------------|---------|
+| Variables, Functions, Objects | JavaScript Engine | `let x = 10;` |
+| DOM (Document Object Model) | Browser | `document.querySelector("div")` |
+| BOM (Browser Object Model) | Browser | `window.innerWidth`, `alert()` |
+| Network Requests | Browser | `fetch("url")`, `XMLHttpRequest` |
+| Storage | Browser | `localStorage.setItem()` |
+| Event Loop / Callbacks | Browser + Engine | `setTimeout(() => {}, 1000)` |
+
+## 5. Timeline of Actions
+
+**Example code:**
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="title">Hello</h1>
+    <script>
+      const el = document.querySelector("#title");
+      console.log(el.textContent);
+    </script>
+  </body>
+</html>
+```
+
+**Execution flow:**
+1. Browser parses `<h1>` → creates DOM node.
+2. Browser sees `<script>` → hands JS code to engine.
+3. Engine executes:
+   - `document` (provided by browser) is available
+   - Finds `<h1>` node in DOM
+   - Logs "Hello"
+
+**Key point:** Engine runs JS, browser provides DOM objects.
+
+## 6. The Difference in One Line
+
+- **JavaScript (engine)** → runs your code (logic, variables, functions)
+- **Browser** → gives your code the world (DOM, storage, fetch, events)
+
+✅ **Master Explanation:**
+> “JavaScript itself is just a language. The engine only understands things like numbers, functions, and objects. When you manipulate the DOM or call fetch, that’s not JavaScript itself — that’s the browser exposing extra APIs. So JS does the thinking, but the browser does the acting.”
+
+---
+
 ## 3. Window vs Document
 - `window` = global object → represents the whole browser tab (localStorage, history, timers, etc.).  
 - `document` = just the **webpage DOM tree** inside the window.  
