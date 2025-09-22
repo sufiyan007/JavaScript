@@ -9,6 +9,9 @@ Think of it as:
 👉 DOM = the *digital copy of the house in memory*  
 👉 JavaScript = the *interior designer who changes things live*
 
+What does “parse” mean?
+👉 Parsing means reading some data step by step and converting it into a structure the computer understands.
+
 ---
 
 ## 1. Why DOM Exists (Purpose)
