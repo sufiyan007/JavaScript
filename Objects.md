@@ -370,10 +370,6 @@ console.log(original.hobbies); // ['reading', 'swimming', 'coding'] -> original 
 
 ## Shallow vs Deep Copy
 
-# Object Copying in JavaScript
-
-## Shallow vs Deep Copy
-
 ### Shallow Copy
 - Copies only the **first level of properties**.
 - Nested objects or arrays are still **referenced**, not duplicated.
