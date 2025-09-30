@@ -16,7 +16,7 @@
 | [Section 6](https://github.com/sufiyan007/JavaScript/blob/main/MoreOnFunctions.md) | More on Functions | • Parameters vs Arguments <br>• Functions vs Methods <br>• Functions are Objects <br>• Function Expressions <br>• Function Expressions vs Declarations <br>• Anonymous Functions <br>• Arrow Functions (Syntax Variants) <br>• Outputting Messages <br>• Default Arguments <br>• Rest Parameters <br>• Nested Functions <br>• Callback Functions <br>• bind() <br>• call() & apply() | 🔜 Upcoming |
 | [Section 7](https://github.com/sufiyan007/JavaScript/blob/main/DOM.md) | The DOM (Document Object Model) | • Module Introduction <br>• What’s the DOM? <br>• Document & Window Object <br>• DOM Creation & Structure <br>• Querying Elements <br>• Attributes vs Properties <br>• DOM Traversal <br>• Styling Elements <br>• Creating & Inserting Elements <br>• Removing & Cloning Nodes <br>• Building a Movie App (Modal, Input, Rendering, Deletion, Confirmation) | 🔜 Upcoming |
 | [Section 8](https://github.com/sufiyan007/JavaScript/blob/main/arrayanditerable.md) | Arrays & Iterables | • Module Introduction <br>• What are "Iterables" and "Array-like Objects"? <br>• Creating Arrays <br>• Which Data Can You Store In Arrays? <br>• push(), pop(), unshift(), shift() - Adding & Removing Elements <br>• The splice() Method <br>• Selecting Ranges & Creating Copies with slice() <br>• Adding Arrays to Arrays with concat() <br>• Retrieving Indexes with indexOf() / lastIndexOf() <br>• Finding Stuff: find() and findIndex() <br>• Is it Included? <br>• Alternative to for Loops: The forEach() Method <br>• Transforming Data with map() <br>• sort()ing and reverse()ing <br>• Filtering Arrays with filter() <br>• Where Arrow Functions Shine! <br>• The Important reduce() Method <br>• Chaining Methods in JavaScript <br>• Arrays & Strings - split() and join() <br>• The Spread Operator (...) <br>• Understanding Array Destructuring <br>• Maps & Sets - Overview <br>• Working with Sets <br>• Working with Maps <br>• Maps vs Objects <br>• Understanding WeakSet <br>• Understanding WeakMap | 🔜 Upcoming |
-| [Section 9](https://github.com/sufiyan007/JavaScript/blob/main/Objects.md) | Objects | •  | 🔜 Upcoming |
+| [Section 9](https://github.com/sufiyan007/JavaScript/blob/main/Objects.md) | Objects | • Module Introduction <br>• What's an Object? <br>• Objects & Primitive Values <br>• Objects - Recap <br>• Adding, Modifying & Deleting Properties <br>• Special Key Names & Square Bracket Property Access <br>• Property Types & Property Order <br>• Dynamic Property Access & Setting Properties Dynamically <br>• Demo App & Shorthand Property Syntax <br>• Rendering Elements based on Objects <br>• for-in Loops & Outputting Dynamic Properties <br>• Adding the Filter Functionality <br>• Understanding "Chaining" (Property & Method Chaining) <br>• The Object Spread Operator (...) <br>• Understanding Object.assign() <br>• Object Destructuring <br>• Checking for Property Existence <br>• Introducing "this" <br>• The Method Shorthand Syntax <br>• The "this" Keyword And Its Strange Behavior <br>• call() and apply() <br>• What the Browser (Sometimes) Does to "this" <br>• "this" and Arrow Functions <br>• "this" - Summary <br>• Getters & Setters | 🔜 Upcoming |
 | [Section 10](#-section-10-classes--oop) | Classes & OOP | •  | 🔜 Upcoming |
 | [Section 11](#-section-11-constructor-functions--prototypes) | Constructor & Prototypes | •  | 🔜 Upcoming |
 | [Section 12](#-section-12-oop-practice) | OOP Practice | •  | 🔜 Upcoming |
@@ -297,3 +297,37 @@
 
 </details>
 
+---
+
+<details>
+<summary><strong>📘 Phase 9: Objects – 🚧 Upcoming</strong></summary>
+
+* [ ] Module Introduction
+* [ ] What's an Object?
+* [ ] Objects & Primitive Values
+* [ ] Objects - Recap
+* [ ] Adding, Modifying & Deleting Properties
+* [ ] Special Key Names & Square Bracket Property Access
+* [ ] Property Types & Property Order
+* [ ] Dynamic Property Access & Setting Properties Dynamically
+* [ ] Demo App & Shorthand Property Syntax
+* [ ] Rendering Elements based on Objects
+* [ ] for-in Loops & Outputting Dynamic Properties
+* [ ] Adding the Filter Functionality
+* [ ] Understanding "Chaining" (Property & Method Chaining)
+* [ ] The Object Spread Operator (...)
+* [ ] Understanding Object.assign()
+* [ ] Object Destructuring
+* [ ] Checking for Property Existence
+* [ ] Introducing "this"
+* [ ] The Method Shorthand Syntax
+* [ ] The "this" Keyword And Its Strange Behavior
+* [ ] call() and apply()
+* [ ] What the Browser (Sometimes) Does to "this"
+* [ ] "this" and Arrow Functions
+* [ ] "this" - Summary
+* [ ] Getters & Setters
+
+</details>
+
+---
