@@ -370,9 +370,37 @@ console.log(original.hobbies); // ['reading', 'swimming', 'coding'] -> original 
 
 ## Shallow vs Deep Copy
 
-- **Shallow Copy:** Copies only the first level of properties. Nested objects or arrays are still referenced.
-- **Deep Copy:** Copies everything, including nested objects and arrays, creating a fully independent copy.
+# Object Copying in JavaScript
 
+## Shallow vs Deep Copy
+
+### Shallow Copy
+- Copies only the **first level of properties**.
+- Nested objects or arrays are still **referenced**, not duplicated.
+- Changing nested objects/arrays in the copy affects the original.
+
+**Example with Spread Operator:**
+```javascript
+const original = { a: 1, b: [2, 3] };
+const shallowCopy = { ...original };
+
+shallowCopy.b.push(4);
+
+console.log(original.b); // Output: [2, 3, 4] → original array affected
+```
+
+```javascript
+const copy = Object.assign({}, original);
+copy.b.push(5);
+console.log(original.b); // Output: [2, 3, 4, 5] → original array affected
+```
+
+```javascript
+const deepCopy = JSON.parse(JSON.stringify(original));
+deepCopy.b.push(6);
+
+console.log(original.b); // Output: [2, 3, 4, 5] → original remains unchanged
+```
 ---
 
 ## 13. Understanding Object.assign()
