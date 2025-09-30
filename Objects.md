@@ -296,6 +296,74 @@ console.log(obj2); // {a:1, b:2, c:3}
 
 **When to use:** Updating objects immutably in apps like React or state management.
 
+# Object Copying vs Spread Operator in JavaScript
+
+## 1. Copying an Existing Object
+
+When you assign an existing object to a new variable, the new variable **points to the same object in memory**.
+
+```js
+const original = { name: 'Alice', age: 25 };
+const copy = original;
+
+copy.age = 30;
+console.log(original.age); // 30 -> original object is also updated
+```
+
+### Explanation
+
+* `copy` does **not create a new object**.
+* Both `copy` and `original` point to the **same memory location**.
+* Changing `copy` affects `original`.
+
+---
+
+## 2. Copying Using Spread Operator
+
+The spread operator `...` creates a **shallow copy** of an object, copying keys and values to a new object.
+
+```js
+const original = { name: 'Alice', hobbies: ['reading', 'swimming'] };
+const copy = { ...original };
+
+copy.name = 'Bob';
+console.log(original.name); // Alice -> original name is unaffected
+```
+
+### Explanation
+
+* `name` property is a primitive, so it’s fully copied.
+* The `copy` object now has its **own top-level properties**.
+
+---
+
+## 3. Caveat with Nested Objects or Arrays
+
+Spread operator performs a **shallow copy**. Nested objects or arrays are still referenced.
+
+```js
+const original = { name: 'Alice', hobbies: ['reading', 'swimming'] };
+const copy = { ...original };
+
+copy.hobbies.push('coding');
+console.log(original.hobbies); // ['reading', 'swimming', 'coding'] -> original array is affected
+```
+
+### Explanation
+
+* `hobbies` is an array (non-primitive).
+* Spread copies the **reference** of the array, not the actual array.
+* Modifying the array in `copy` affects the `original` object.
+
+---
+
+## ✅ Key Takeaways
+
+1. Simple assignment (`=`) points to the same object.
+2. Spread operator (`...`) creates a shallow copy.
+3. Nested objects/arrays are still shared by reference.
+4. To deep copy objects with nested structures, you need other techniques like `JSON.parse(JSON.stringify(obj))` or utility libraries (`lodash.cloneDeep`).
+
 ---
 
 ## 13. Understanding Object.assign()
