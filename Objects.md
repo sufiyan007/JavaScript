@@ -364,6 +364,15 @@ console.log(original.hobbies); // ['reading', 'swimming', 'coding'] -> original 
 3. Nested objects/arrays are still shared by reference.
 4. To deep copy objects with nested structures, you need other techniques like `JSON.parse(JSON.stringify(obj))` or utility libraries (`lodash.cloneDeep`).
 
+
+
+# Object Copying in JavaScript
+
+## Shallow vs Deep Copy
+
+- **Shallow Copy:** Copies only the first level of properties. Nested objects or arrays are still referenced.
+- **Deep Copy:** Copies everything, including nested objects and arrays, creating a fully independent copy.
+
 ---
 
 ## 13. Understanding Object.assign()
