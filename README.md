@@ -17,8 +17,8 @@
 | [Section 7](https://github.com/sufiyan007/JavaScript/blob/main/DOM.md) | The DOM (Document Object Model) | • Module Introduction <br>• What’s the DOM? <br>• Document & Window Object <br>• DOM Creation & Structure <br>• Querying Elements <br>• Attributes vs Properties <br>• DOM Traversal <br>• Styling Elements <br>• Creating & Inserting Elements <br>• Removing & Cloning Nodes <br>• Building a Movie App (Modal, Input, Rendering, Deletion, Confirmation) | 🔜 Upcoming |
 | [Section 8](https://github.com/sufiyan007/JavaScript/blob/main/arrayanditerable.md) | Arrays & Iterables | • Module Introduction <br>• What are "Iterables" and "Array-like Objects"? <br>• Creating Arrays <br>• Which Data Can You Store In Arrays? <br>• push(), pop(), unshift(), shift() - Adding & Removing Elements <br>• The splice() Method <br>• Selecting Ranges & Creating Copies with slice() <br>• Adding Arrays to Arrays with concat() <br>• Retrieving Indexes with indexOf() / lastIndexOf() <br>• Finding Stuff: find() and findIndex() <br>• Is it Included? <br>• Alternative to for Loops: The forEach() Method <br>• Transforming Data with map() <br>• sort()ing and reverse()ing <br>• Filtering Arrays with filter() <br>• Where Arrow Functions Shine! <br>• The Important reduce() Method <br>• Chaining Methods in JavaScript <br>• Arrays & Strings - split() and join() <br>• The Spread Operator (...) <br>• Understanding Array Destructuring <br>• Maps & Sets - Overview <br>• Working with Sets <br>• Working with Maps <br>• Maps vs Objects <br>• Understanding WeakSet <br>• Understanding WeakMap | 🔜 Upcoming |
 | [Section 9](https://github.com/sufiyan007/JavaScript/blob/main/Objects.md) | Objects | • Module Introduction <br>• What's an Object? <br>• Objects & Primitive Values <br>• Objects - Recap <br>• Adding, Modifying & Deleting Properties <br>• Special Key Names & Square Bracket Property Access <br>• Property Types & Property Order <br>• Dynamic Property Access & Setting Properties Dynamically <br>• Demo App & Shorthand Property Syntax <br>• Rendering Elements based on Objects <br>• for-in Loops & Outputting Dynamic Properties <br>• Adding the Filter Functionality <br>• Understanding "Chaining" (Property & Method Chaining) <br>• The Object Spread Operator (...) <br>• Understanding Object.assign() <br>• Object Destructuring <br>• Checking for Property Existence <br>• Introducing "this" <br>• The Method Shorthand Syntax <br>• The "this" Keyword And Its Strange Behavior <br>• call() and apply() <br>• What the Browser (Sometimes) Does to "this" <br>• "this" and Arrow Functions <br>• "this" - Summary <br>• Getters & Setters | 🔜 Upcoming |
-| [Section 10](#-section-10-classes--oop) | Classes & OOP | •  | 🔜 Upcoming |
-| [Section 11](#-section-11-constructor-functions--prototypes) | Constructor & Prototypes | •  | 🔜 Upcoming |
+| [Section 10](https://github.com/sufiyan007/JavaScript/blob/main/oops.md) | Classes & OOP | • Module Introduction <br>• What is Object-oriented Programming (OOP)? <br>• Getting Started with OOP Code <br>• Defining & Using a Class <br>• Working with Constructor Methods <br>• Fields vs Properties <br>• Using & Connecting Multiple Classes <br>• Binding Class Methods & Working with "this" <br>• Adding a Cart and Shop Class <br>• Communicating Between Classes <br>• Static Methods & Properties <br>• Classes vs Object Literals <br>• Getters & Setters <br>• Introducing Inheritance <br>• Implementing Inheritance <br>• Using Inheritance Everywhere <br>• Overriding Methods & super() <br>• Constructor Order & "this" <br>• Different Ways of Adding Methods <br>• Private & Pseudo-Private Properties <br>• instanceof Operator <br>• Built-in Classes <br>• Object Descriptors | 🔜 Upcoming |
+| [Section 11](https://github.com/sufiyan007/JavaScript/blob/main/constructorandprototype.md) | Constructor & Prototypes | • Module Introduction <br>• What Are Constructor Functions? <br>• Creating Objects with Constructors <br>• Understanding the Prototype <br>• Prototype Chain in Action <br>• Adding Methods to Prototypes <br>• Understanding `__proto__` <br>• The Prototype Property <br>• Constructor Functions vs Classes <br>• Prototype Inheritance <br>• Overriding Prototype Methods <br>• The `hasOwnProperty` Method <br>• Built-in Prototypes <br>• Extending Built-in Prototypes <br>• Prototype Pitfalls <br>• Manual Inheritance with Constructors <br>• Linking Prototypes Manually <br>• Inspecting the Prototype Chain <br>• Mixins & Shared Behavior <br>• ES5 vs ES6 Approach | 🔜 Upcoming |
 | [Section 12](#-section-12-oop-practice) | OOP Practice | •  | 🔜 Upcoming |
 | [Section 13](#-section-13-back-to-the-dom) | More on DOM | •  | 🔜 Upcoming |
 | [Section 14](#-section-14-working-with-events) | Events | •  | 🔜 Upcoming |
@@ -327,6 +327,67 @@
 * [ ] "this" and Arrow Functions
 * [ ] "this" - Summary
 * [ ] Getters & Setters
+
+</details>
+
+---
+
+<details>
+<summary><strong>📘 Phase 10: Classes & OOP – 🚧 Upcoming</strong></summary>
+
+* [ ] Module Introduction  
+* [ ] What is Object-oriented Programming (OOP)?  
+* [ ] Getting Started with OOP Code  
+* [ ] Defining & Using a Class  
+* [ ] Working with Constructor Methods  
+* [ ] Fields vs Properties  
+* [ ] Using & Connecting Multiple Classes  
+* [ ] Binding Class Methods & Working with "this"  
+* [ ] Adding a Cart and Shop Class  
+* [ ] Communicating Between Classes  
+* [ ] Static Methods & Properties  
+* [ ] First Summary & Classes vs Object Literals  
+* [ ] Getters & Setters  
+* [ ] Introducing Inheritance  
+* [ ] Implementing Inheritance  
+* [ ] Using Inheritance Everywhere  
+* [ ] Overriding Methods & the super() Constructor  
+* [ ] super() Execution, Order & "this"  
+* [ ] Different Ways of Adding Methods  
+* [ ] Private Properties  
+* [ ] "Pseudo-Private" Properties  
+* [ ] Assignment: Practice Classes & OOP  
+* [ ] The "instanceof" Operator  
+* [ ] Built-in Classes  
+* [ ] Understanding Object Descriptors  
+
+</details>
+
+---
+
+<details>
+<summary><strong>📘 Phase 11: Constructor & Prototypes – 🚧 Upcoming</strong></summary>
+
+* [ ] Module Introduction  
+* [ ] What Are Constructor Functions?  
+* [ ] Creating Objects with Constructors  
+* [ ] Understanding the Prototype  
+* [ ] The Prototype Chain  
+* [ ] Adding Methods to Prototypes  
+* [ ] Understanding `__proto__`  
+* [ ] The `prototype` Property  
+* [ ] Constructor Functions vs Classes  
+* [ ] Prototype Inheritance  
+* [ ] Overriding Prototype Methods  
+* [ ] Using `hasOwnProperty`  
+* [ ] Built-in Prototypes  
+* [ ] Extending Built-in Prototypes  
+* [ ] Prototype Pitfalls  
+* [ ] Manual Inheritance with Constructors  
+* [ ] Linking Prototypes Manually  
+* [ ] Inspecting the Prototype Chain  
+* [ ] Mixins & Shared Behavior  
+* [ ] ES5 vs ES6 Approach  
 
 </details>
 
