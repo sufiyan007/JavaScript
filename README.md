@@ -24,26 +24,13 @@
 | [Section 14](#-section-14-working-with-events) | Events | •  | 🔜 Upcoming |
 | [Section 15](#-section-15-advanced-function-concepts) | Advanced Functions | •  | 🔜 Upcoming |
 | [Section 16](#-section-16-numbers--strings) | Numbers & Strings | •  | 🔜 Upcoming |
-| [Section 17](https://github.com/sufiyan007/JavaScript/blob/main/promises.md) | Async JS | •  | 🔜 Upcoming |
+| [Section 17](https://github.com/sufiyan007/JavaScript/blob/main/promises.md) | Async JS | • Module Introduction <br>• Sync vs Async Code <br>• Blocking Code & Event Loop <br>• Execution Order in Sync + Async <br>• Callbacks & setTimeout(0) <br>• Getting Started with Promises <br>• Chaining Promises <br>• Promise Error Handling <br>• Promise States & finally <br>• Async / Await <br>• Async / Await Error Handling <br>• Async / Await vs Promises <br>• Promise.all(), Promise.race(), etc. | 🔜 Upcoming |
 | [Section 18](#-section-18-http-requests) | HTTP Requests | •  | 🔜 Upcoming |
 | [Section 19](#-section-19-working-with-libraries) | Libraries | •  | 🔜 Upcoming |
 | [Section 20](#-section-20-modular-javascript) | Modular JS | •  | 🔜 Upcoming |
-| [Section 21](#-section-21-tooling--workflows) | Tooling & Workflows | •  | 🔜 Upcoming |
-| [Section 22](#-section-22-browser-storage) | Browser Storage | •  | 🔜 Upcoming |
-| [Section 23](#-section-23-browser-support) | Browser Support | •  | 🔜 Upcoming |
-| [Section 24](#-section-24-practice-share-my-place-app) | Practice Project | •  | 🔜 Upcoming |
-| [Section 25](#-section-25-frameworks) | Frameworks | •  | 🔜 Upcoming |
-| [Section 26](#-section-26-meta-programming) | Meta-Programming | •  | 🔜 Upcoming |
-| [Section 27](#-section-27-nodejs) | Node.js Intro | •  | 🔜 Upcoming |
-| [Section 28](#-section-28-security) | Security | •  | 🔜 Upcoming |
-| [Section 29](#-section-29-deploying-code) | Deployment | •  | 🔜 Upcoming |
-| [Section 30](#-section-30-performance--optimizations) | Performance | •  | 🔜 Upcoming |
-| [Section 31](#-section-31-testing) | Testing | •  | 🔜 Upcoming |
-| [Section 32](#-section-32-programming-paradigms) | Paradigms | •  | 🔜 Upcoming |
-| [Section 33](#-section-33-data-structures--algorithms) | DSA Basics | •  | 🔜 Upcoming |
-| [Section 34](#-section-34-typescript-intro) | TypeScript | •  | 🔜 Upcoming |
-| [Section 35](#-section-35-web-components) | Web Components | •  | 🔜 Upcoming |
-| [Section 36](#-section-36-roundup--next-steps) | Wrap Up | •  | 🔜 Upcoming |
+| [Section 21](#-section-25-frameworks) | Frameworks | •  | 🔜 Upcoming |
+| [Section 22](#-section-27-nodejs) | Node.js Intro | •  | 🔜 Upcoming |
+| [Section 23](#-section-34-typescript-intro) | TypeScript | •  | 🔜 Upcoming |
 
 ---
 
@@ -388,6 +375,30 @@
 * [ ] Inspecting the Prototype Chain  
 * [ ] Mixins & Shared Behavior  
 * [ ] ES5 vs ES6 Approach  
+
+</details>
+
+---
+
+<details>
+<summary><strong>⚡ Phase 17: Async JavaScript (Callbacks, Promises & Async/Await) – 🚧 Upcoming</strong></summary>
+
+* [ ] Module Introduction  
+* [ ] Understanding Synchronous Code Execution ("Sync Code")  
+* [ ] Understanding Asynchronous Code Execution ("Async Code")  
+* [ ] Blocking Code & The "Event Loop"  
+* [ ] Sync + Async Code – Execution Order  
+* [ ] Multiple Callbacks & `setTimeout(0)`  
+* [ ] Getting Started with Promises  
+* [ ] Chaining Multiple Promises  
+* [ ] Promise Error Handling (`.catch`)  
+* [ ] Promise States & `finally`  
+* [ ] Introduction to `async / await`  
+* [ ] Error Handling with `async / await`  
+* [ ] Async / Await vs Raw Promises  
+* [ ] `Promise.all()`, `Promise.race()`, `Promise.allSettled()`, `Promise.any()`  
+* [ ] Microtasks vs Macrotasks Queue (Optional Advanced)  
+* [ ] Common Mistakes & Best Practices  
 
 </details>
 
