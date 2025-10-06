@@ -24,7 +24,7 @@
 | [Section 14](#-section-14-working-with-events) | Events | •  | 🔜 Upcoming |
 | [Section 15](#-section-15-advanced-function-concepts) | Advanced Functions | •  | 🔜 Upcoming |
 | [Section 16](#-section-16-numbers--strings) | Numbers & Strings | •  | 🔜 Upcoming |
-| [Section 17](#-section-17-promises--callbacks) | Async JS | •  | 🔜 Upcoming |
+| [Section 17](https://github.com/sufiyan007/JavaScript/blob/main/promises.md) | Async JS | •  | 🔜 Upcoming |
 | [Section 18](#-section-18-http-requests) | HTTP Requests | •  | 🔜 Upcoming |
 | [Section 19](#-section-19-working-with-libraries) | Libraries | •  | 🔜 Upcoming |
 | [Section 20](#-section-20-modular-javascript) | Modular JS | •  | 🔜 Upcoming |
