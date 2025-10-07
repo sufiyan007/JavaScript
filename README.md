@@ -24,8 +24,8 @@
 | [Section 14](#-section-14-working-with-events) | Events | •  | 🔜 Upcoming |
 | [Section 15](#-section-15-advanced-function-concepts) | Advanced Functions | •  | 🔜 Upcoming |
 | [Section 16](#-section-16-numbers--strings) | Numbers & Strings | •  | 🔜 Upcoming |
-| [Section 17](https://github.com/sufiyan007/JavaScript/blob/main/promises.md) | Async JS | • Module Introduction <br>• Sync vs Async Code <br>• Blocking Code & Event Loop <br>• Execution Order in Sync + Async <br>• Callbacks & setTimeout(0) <br>• Getting Started with Promises <br>• Chaining Promises <br>• Promise Error Handling <br>• Promise States & finally <br>• Async / Await <br>• Async / Await Error Handling <br>• Async / Await vs Promises <br>• Promise.all(), Promise.race(), etc. | 🔜 Upcoming |
-| [Section 18](#-section-18-http-requests) | HTTP Requests | •  | 🔜 Upcoming |
+| [Section 17](https://github.com/sufiyan007/JavaScript/blob/main/promises.md) | Async JS | • Module Introduction <br>• Sync vs Async Code <br>• Blocking Code & Event Loop <br>• Execution Order in Sync + Async <br>• Callbacks & setTimeout(0) <br>• Getting Started with Promises <br>• Chaining Promises <br>• Promise Error Handling <br>• Promise States & finally <br>• Async / Await <br>• Async / Await Error Handling <br>• Async / Await vs Promises <br>• Promise.all(), Promise.race(), etc. | ✅ Completed |
+| [Section 18](https://github.com/sufiyan007/JavaScript/blob/main/api.md) | HTTP Requests | • Module Introduction <br>• What & Why of HTTP <br>• How the Web Works <br>• HTTP vs HTTPS <br>• HTTP Methods (GET, POST, PUT, DELETE, PATCH, etc.) <br>• Request Structure (URL, Headers, Body) <br>• Response & Status Codes <br>• JSON Parsing & Data Handling <br>• Promisifying HTTP (XMLHttpRequest) <br>• Using fetch() API <br>• Error Handling with fetch() <br>• Sending POST Requests <br>• Adding Request Headers <br>• fetch() vs XMLHttpRequest <br>• Using FormData <br>• HTTP in Node.js (http, https, axios, fetch) <br>• Comparing Browser vs Node.js Implementations <br>• Common Mistakes & Best Practices | ✅ Completed |
 | [Section 19](#-section-19-working-with-libraries) | Libraries | •  | 🔜 Upcoming |
 | [Section 20](#-section-20-modular-javascript) | Modular JS | •  | 🔜 Upcoming |
 | [Section 21](#-section-25-frameworks) | Frameworks | •  | 🔜 Upcoming |
@@ -399,6 +399,31 @@
 * [ ] `Promise.all()`, `Promise.race()`, `Promise.allSettled()`, `Promise.any()`  
 * [ ] Microtasks vs Macrotasks Queue (Optional Advanced)  
 * [ ] Common Mistakes & Best Practices  
+
+</details>
+
+---
+
+<details>
+<summary><strong>🌐 Phase 18: HTTP Requests (Browser & Node.js) – ✅ Completed</strong></summary>
+
+* [x] Module Introduction  
+* [x] What & Why of HTTP  
+* [x] How the Web Works  
+* [x] HTTP vs HTTPS  
+* [x] HTTP Request Structure (Domain + URL, Methods, Headers, Body)  
+* [x] HTTP Response Structure & Status Codes  
+* [x] JSON Parsing & Data Flow  
+* [x] XMLHttpRequest Deep Dive  
+* [x] Promisifying HTTP Requests  
+* [x] Using the fetch() API (GET, POST, DELETE, PATCH)  
+* [x] Handling Errors with fetch()  
+* [x] Adding Request Headers  
+* [x] fetch() vs XMLHttpRequest  
+* [x] Working with FormData  
+* [x] HTTP in Node.js (http, https, axios, node-fetch)  
+* [x] Comparing Browser vs Node.js Implementations  
+* [x] Common Mistakes & Best Practices
 
 </details>
 
